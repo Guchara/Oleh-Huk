@@ -1,0 +1,363 @@
+Oleh Huk-Sataikin
+1)
+
+2)
+CREATE FUNCTION Chisla(@CH_BEG int)
+
+RETURNS NVARCHAR(20)
+
+BEGIN
+DECLARE @Netscaper NVARCHAR(20);
+
+IF (@CH_BEG > -1 AND @CH_BEG <100) 
+    IF (@CH_BEG > -1 AND @CH_BEG <10) 
+                    IF @CH_BEG > -1 AND @CH_BEG <1
+                        SET @Netscaper = N'Ноль';
+                    ELSE
+                        IF @CH_BEG > 0 AND @CH_BEG <2
+                        SET @Netscaper = N'Один'
+                        ELSE
+                        IF @CH_BEG > 1 AND @CH_BEG <3
+                        SET @Netscaper = N'Два'
+                        ELSE
+                        IF @CH_BEG > 2 AND @CH_BEG <4
+                        SET @Netscaper = N'Три'
+                        ELSE
+                        IF @CH_BEG > 3 AND @CH_BEG <5
+                        SET @Netscaper = N'Четыре'
+                        ELSE
+                        IF @CH_BEG > 4 AND @CH_BEG <6
+                        SET @Netscaper = N'Пять'
+                        ELSE
+                        IF @CH_BEG > 5 AND @CH_BEG <7
+                        SET @Netscaper = N'Шесть'
+                        ELSE
+                        IF @CH_BEG > 6 AND @CH_BEG <8
+                        SET @Netscaper = N'Семь'
+                        ELSE
+                        IF @CH_BEG > 7 AND @CH_BEG <9
+                        SET @Netscaper = N'Восемь'
+                        ELSE
+                        IF @CH_BEG > 8 AND @CH_BEG <10
+                        SET @Netscaper = N'Девять'
+                    
+                        ELSE
+                            RETURN ''
+
+       ELSE
+            IF (@CH_BEG > 9 AND @CH_BEG <20) 
+                    IF @CH_BEG > 9 AND @CH_BEG <11
+                        SET @Netscaper = N'Десять';
+                    ELSE
+                        IF @CH_BEG > 10 AND @CH_BEG <12
+                        SET @Netscaper = N'Одиннадцать'
+                        ELSE
+                        IF @CH_BEG > 11 AND @CH_BEG <13
+                        SET @Netscaper = N'Двенадцать'
+                        ELSE
+                        IF @CH_BEG > 12 AND @CH_BEG <14
+                        SET @Netscaper = N'Тринадцать'
+                        ELSE
+                        IF @CH_BEG > 13 AND @CH_BEG <15
+                        SET @Netscaper = N'Четырнадцать'
+                        ELSE
+                        IF @CH_BEG > 14 AND @CH_BEG <16
+                        SET @Netscaper = N'Пятнадцать'
+                        ELSE
+                        IF @CH_BEG > 15 AND @CH_BEG <17
+                        SET @Netscaper = N'Шестнадцать'
+                        ELSE
+                        IF @CH_BEG > 16 AND @CH_BEG <18
+                        SET @Netscaper = N'Семнадцать'
+                        ELSE
+                        IF @CH_BEG > 17 AND @CH_BEG <19
+                        SET @Netscaper = N'Восемнадцать'
+                        ELSE
+                        IF @CH_BEG > 18 AND @CH_BEG <20
+                        SET @Netscaper = N'Девятнадцать'
+                    
+                        ELSE
+                            RETURN ''  
+        ELSE        
+            IF (@CH_BEG > 19 AND @CH_BEG <30) 
+                    IF @CH_BEG > 19 AND @CH_BEG <21
+                        SET @Netscaper = N'Двадцать';
+                    ELSE
+                        IF @CH_BEG > 20 AND @CH_BEG <22
+                        SET @Netscaper = N'Двадцать один'
+                        ELSE
+                        IF @CH_BEG > 21 AND @CH_BEG <23
+                        SET @Netscaper = N'Двадцать два'
+                        ELSE
+                        IF @CH_BEG > 22 AND @CH_BEG <24
+                        SET @Netscaper = N'Двадцать три'
+                        ELSE
+                        IF @CH_BEG > 23 AND @CH_BEG <25
+                        SET @Netscaper = N'Двадцать четыре'
+                        ELSE
+                        IF @CH_BEG > 24 AND @CH_BEG <26
+                        SET @Netscaper = N'Двадцать пять'
+                        ELSE
+                        IF @CH_BEG > 25 AND @CH_BEG <27
+                        SET @Netscaper = N'Двадцать шесть'
+                        ELSE
+                        IF @CH_BEG > 26 AND @CH_BEG <28
+                        SET @Netscaper = N'Двадцать семь'
+                        ELSE
+                        IF @CH_BEG > 27 AND @CH_BEG <29
+                        SET @Netscaper = N'Двадцать восемь'
+                        ELSE
+                        IF @CH_BEG > 28 AND @CH_BEG <30
+                        SET @Netscaper = N'Двадцать девять'
+                    
+                        ELSE
+                            RETURN ''
+        ELSE
+            IF (@CH_BEG > 29 AND @CH_BEG <40) 
+                    IF @CH_BEG > 29 AND @CH_BEG <31
+                        SET @Netscaper = N'Тридцать';
+                    ELSE
+                        IF @CH_BEG > 30 AND @CH_BEG <32
+                        SET @Netscaper = N'Тридцать один'
+                        ELSE
+                        IF @CH_BEG > 31 AND @CH_BEG <33
+                        SET @Netscaper = N'Тридцать два'
+                        ELSE
+                        IF @CH_BEG > 32 AND @CH_BEG <34
+                        SET @Netscaper = N'Тридцать три'
+                        ELSE
+                        IF @CH_BEG > 33 AND @CH_BEG <35
+                        SET @Netscaper = N'Тридцать четыре'
+                        ELSE
+                        IF @CH_BEG > 34 AND @CH_BEG <36
+                        SET @Netscaper = N'Тридцать пять'
+                        ELSE
+                        IF @CH_BEG > 35 AND @CH_BEG <37
+                        SET @Netscaper = N'Тридцать шесть'
+                        ELSE
+                        IF @CH_BEG > 36 AND @CH_BEG <38
+                        SET @Netscaper = N'Тридцать семь'
+                        ELSE
+                        IF @CH_BEG > 37 AND @CH_BEG <39
+                        SET @Netscaper = N'Тридцать восемь'
+                        ELSE
+                        IF @CH_BEG > 38 AND @CH_BEG <40
+                        SET @Netscaper = N'Тридцать девять'
+                    
+                        ELSE
+                            RETURN ''
+
+        ELSE
+            IF (@CH_BEG > 39 AND @CH_BEG <50) 
+                    IF @CH_BEG > 39 AND @CH_BEG <41
+                        SET @Netscaper = N'Сорок';
+                    ELSE
+                        IF @CH_BEG > 40 AND @CH_BEG <42
+                        SET @Netscaper = N'Сорок один'
+                        ELSE
+                        IF @CH_BEG > 41 AND @CH_BEG <43
+                        SET @Netscaper = N'Сорок два'
+                        ELSE
+                        IF @CH_BEG > 42 AND @CH_BEG <44
+                        SET @Netscaper = N'Сорок три'
+                        ELSE
+                        IF @CH_BEG > 43 AND @CH_BEG <45
+                        SET @Netscaper = N'Сорок четыре'
+                        ELSE
+                        IF @CH_BEG > 44 AND @CH_BEG <46
+                        SET @Netscaper = N'Сорок пять'
+                        ELSE
+                        IF @CH_BEG > 45 AND @CH_BEG <47
+                        SET @Netscaper = N'Сорок шесть'
+                        ELSE
+                        IF @CH_BEG > 46 AND @CH_BEG <48
+                        SET @Netscaper = N'Сорок семь'
+                        ELSE
+                        IF @CH_BEG > 47 AND @CH_BEG <49
+                        SET @Netscaper = N'Сорок восемь'
+                        ELSE
+                        IF @CH_BEG > 48 AND @CH_BEG <50
+                        SET @Netscaper = N'Сорок девять'
+                    
+                        ELSE
+                            RETURN ''
+        ELSE
+            IF (@CH_BEG > 49 AND @CH_BEG <60) 
+                    IF @CH_BEG > 49 AND @CH_BEG <51
+                        SET @Netscaper = N'Пятьдесят';
+                    ELSE
+                        IF @CH_BEG > 50 AND @CH_BEG <52
+                        SET @Netscaper = N'Пятьдесят один'
+                        ELSE
+                        IF @CH_BEG > 51 AND @CH_BEG <53
+                        SET @Netscaper = N'Пятьдесят два'
+                        ELSE
+                        IF @CH_BEG > 52 AND @CH_BEG <54
+                        SET @Netscaper = N'Пятьдесят три'
+                        ELSE
+                        IF @CH_BEG > 53 AND @CH_BEG <55
+                        SET @Netscaper = N'Пятьдесят четыре'
+                        ELSE
+                        IF @CH_BEG > 54 AND @CH_BEG <56
+                        SET @Netscaper = N'Пятьдесят пять'
+                        ELSE
+                        IF @CH_BEG > 55 AND @CH_BEG <57
+                        SET @Netscaper = N'Пятьдесят шесть'
+                        ELSE
+                        IF @CH_BEG > 56 AND @CH_BEG <58
+                        SET @Netscaper = N'Пятьдесят семь'
+                        ELSE
+                        IF @CH_BEG > 57 AND @CH_BEG <59
+                        SET @Netscaper = N'Пятьдесят восемь'
+                        ELSE
+                        IF @CH_BEG > 58 AND @CH_BEG <60
+                        SET @Netscaper = N'Пятьдесят девять'
+                    
+                        ELSE
+                            RETURN ''
+        ELSE
+            IF (@CH_BEG > 59 AND @CH_BEG <70) 
+                    IF @CH_BEG > 59 AND @CH_BEG <61
+                        SET @Netscaper = N'Шестьдесят';
+                    ELSE
+                        IF @CH_BEG > 60 AND @CH_BEG <62
+                        SET @Netscaper = N'Шестьдесят один'
+                        ELSE
+                        IF @CH_BEG > 61 AND @CH_BEG <63
+                        SET @Netscaper = N'Шестьдесят два'
+                        ELSE
+                        IF @CH_BEG > 62 AND @CH_BEG <64
+                        SET @Netscaper = N'Шестьдесят три'
+                        ELSE
+                        IF @CH_BEG > 63 AND @CH_BEG <65
+                        SET @Netscaper = N'Шестьдесят четыре'
+                        ELSE
+                        IF @CH_BEG > 64 AND @CH_BEG <66
+                        SET @Netscaper = N'Шестьдесят пять'
+                        ELSE
+                        IF @CH_BEG > 65 AND @CH_BEG <67
+                        SET @Netscaper = N'Шестьдесят шесть'
+                        ELSE
+                        IF @CH_BEG > 66 AND @CH_BEG <68
+                        SET @Netscaper = N'Шестьдесят семь'
+                        ELSE
+                        IF @CH_BEG > 67 AND @CH_BEG <69
+                        SET @Netscaper = N'Шестьдесят восемь'
+                        ELSE
+                        IF @CH_BEG > 68 AND @CH_BEG <70
+                        SET @Netscaper = N'Шестьдесят девять'
+                    
+                        ELSE
+                            RETURN ''
+        ELSE
+            IF (@CH_BEG > 69 AND @CH_BEG <80) 
+                    IF @CH_BEG > 69 AND @CH_BEG <71
+                        SET @Netscaper = N'Семьдесят';
+                    ELSE
+                        IF @CH_BEG > 70 AND @CH_BEG <72
+                        SET @Netscaper = N'Семьдесят один'
+                        ELSE
+                        IF @CH_BEG > 71 AND @CH_BEG <73
+                        SET @Netscaper = N'Семьдесят два'
+                        ELSE
+                        IF @CH_BEG > 72 AND @CH_BEG <74
+                        SET @Netscaper = N'Семьдесят три'
+                        ELSE
+                        IF @CH_BEG > 73 AND @CH_BEG <75
+                        SET @Netscaper = N'Семьдесят четыре'
+                        ELSE
+                        IF @CH_BEG > 74 AND @CH_BEG <76
+                        SET @Netscaper = N'Семьдесят пять'
+                        ELSE
+                        IF @CH_BEG > 75 AND @CH_BEG <77
+                        SET @Netscaper = N'Семьдесят шесть'
+                        ELSE
+                        IF @CH_BEG > 76 AND @CH_BEG <78
+                        SET @Netscaper = N'Семьдесят семь'
+                        ELSE
+                        IF @CH_BEG > 77 AND @CH_BEG <79
+                        SET @Netscaper = N'Семьдесят восемь'
+                        ELSE
+                        IF @CH_BEG > 78 AND @CH_BEG <80
+                        SET @Netscaper = N'Семьдесят девять'
+                    
+                        ELSE
+                            RETURN ''
+        ELSE
+            IF (@CH_BEG > 79 AND @CH_BEG <90) 
+                    IF @CH_BEG > 79 AND @CH_BEG <81
+                        SET @Netscaper = N'Восемьдесят';
+                    ELSE
+                        IF @CH_BEG > 80 AND @CH_BEG <82
+                        SET @Netscaper = N'Восемьдесят один'
+                        ELSE
+                        IF @CH_BEG > 81 AND @CH_BEG <83
+                        SET @Netscaper = N'Восемьдесят два'
+                        ELSE
+                        IF @CH_BEG > 82 AND @CH_BEG <84
+                        SET @Netscaper = N'Восемьдесят три'
+                        ELSE
+                        IF @CH_BEG > 83 AND @CH_BEG <85
+                        SET @Netscaper = N'Восемьдесят четыре'
+                        ELSE
+                        IF @CH_BEG > 84 AND @CH_BEG <86
+                        SET @Netscaper = N'Восемьдесят пять'
+                        ELSE
+                        IF @CH_BEG > 85 AND @CH_BEG <87
+                        SET @Netscaper = N'Восемьдесят шесть'
+                        ELSE
+                        IF @CH_BEG > 86 AND @CH_BEG <88
+                        SET @Netscaper = N'Восемьдесят семь'
+                        ELSE
+                        IF @CH_BEG > 87 AND @CH_BEG <89
+                        SET @Netscaper = N'Восемьдесят восемь'
+                        ELSE
+                        IF @CH_BEG > 88 AND @CH_BEG <90
+                        SET @Netscaper = N'Восемьдесят девять'
+                    
+                        ELSE
+                            RETURN ''
+        ELSE
+            IF (@CH_BEG > 89 AND @CH_BEG <100) 
+                    IF @CH_BEG > 89 AND @CH_BEG <91
+                        SET @Netscaper = N'Девяносто';
+                    ELSE
+                        IF @CH_BEG > 90 AND @CH_BEG <92
+                        SET @Netscaper = N'Девяносто один'
+                        ELSE
+                        IF @CH_BEG > 91 AND @CH_BEG <93
+                        SET @Netscaper = N'Девяносто два'
+                        ELSE
+                        IF @CH_BEG > 92 AND @CH_BEG <94
+                        SET @Netscaper = N'Девяносто три'
+                        ELSE
+                        IF @CH_BEG > 93 AND @CH_BEG <95
+                        SET @Netscaper = N'Девяносто четыре'
+                        ELSE
+                        IF @CH_BEG > 94 AND @CH_BEG <96
+                        SET @Netscaper = N'Девяносто пять'
+                        ELSE
+                        IF @CH_BEG > 95 AND @CH_BEG <97
+                        SET @Netscaper = N'Девяносто шесть'
+                        ELSE
+                        IF @CH_BEG > 96 AND @CH_BEG <98
+                        SET @Netscaper = N'Девяносто семь'
+                        ELSE
+                        IF @CH_BEG > 97 AND @CH_BEG <99
+                        SET @Netscaper = N'Девяносто восемь'
+                        ELSE
+                        IF @CH_BEG > 98 AND @CH_BEG <100
+                        SET @Netscaper = N'Девяносто девять'
+                    
+                        ELSE
+                            RETURN ''                            
+ELSE
+    IF (@Netscaper = NULL) 
+        SET @Netscaper = ''
+    ELSE SET @Netscaper = ''
+
+RETURN @Netscaper
+
+END
+_________________
+SELECT [dbo].[Chisla](1) as 'Число';
